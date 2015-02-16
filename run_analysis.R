@@ -31,6 +31,14 @@
 #     of each variable for each activity and each subject.
 #
 
+# Loading packages
+library (dplyr)
+library (tidyr)
+library (Hmisc)
+library (httr)
+library (knitr)
+library (memisc)
+library (R.utils)
 
 # Verifies if the folder "data" exists, if not exist it is created
 if (!file.exists("./data/")){
