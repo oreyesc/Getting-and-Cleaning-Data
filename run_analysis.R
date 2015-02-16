@@ -33,12 +33,13 @@
 
 # Loading packages
 library (dplyr)
-library (tidyr)
+library (epicalc)
 library (Hmisc)
 library (httr)
 library (knitr)
 library (memisc)
 library (R.utils)
+library (tidyr)
 
 # Verifies if the folder "data" exists, if not exist it is created
 if (!file.exists("./data/")){
