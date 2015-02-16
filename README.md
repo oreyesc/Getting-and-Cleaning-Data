@@ -1,5 +1,5 @@
-<h1 color="darkblue">Getting-and-Cleaning-Data</h1>
-  <h3> <b>Autor:</b> Oscar Reyes</h3>
+<h1>Getting-and-Cleaning-Data</h1>
+  <h3> <b>Author:</b> Oscar Reyes</h3>
   <h3> <b>Title:</b> Course Project - Getting Cleaning Data </h3>
   <h3> Description:</h3> 
   <p>The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. 
