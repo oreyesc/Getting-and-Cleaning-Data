@@ -37,6 +37,7 @@ library (epicalc)
 library (Hmisc)
 library (httr)
 library (knitr)
+library (markdown)
 library (memisc)
 library (R.utils)
 library (tidyr)
@@ -123,6 +124,8 @@ str (activity_labels_Data)
         dataSet <- cbind (Y_subject_test_train, X_test_train)
 
         # Verification
+## @knitr point1
+## ---- Q1 ----
         str (dataSet)
         head (dataSet, 10)
         names (dataSet)
@@ -170,7 +173,8 @@ str (activity_labels_Data)
 
         # Verification
         str (dataSet_mean_std_Features)
-        head (dataSet_mean_std_Features, 40)
+## @knitr point1        
+head (dataSet_mean_std_Features, 40)
         names (dataSet_mean_std_Features)
 
 #  5. From the data set in step 4, creates a second, independent tidy data set with the
@@ -180,3 +184,5 @@ str (activity_labels_Data)
         tidyDataSet <- stats:::aggregate.formula ( .~subject + label, data = dataSet_mean_std_Features, mean)
         # Save the data in a file
         write.table (tidyDataSet, file = "./data/tidyDataSet.txt", row.names = FALSE)
+
+
