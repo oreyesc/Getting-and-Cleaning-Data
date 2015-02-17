@@ -184,5 +184,3 @@ head (dataSet_mean_std_Features, 40)
         tidyDataSet <- stats:::aggregate.formula ( .~subject + label, data = dataSet_mean_std_Features, mean)
         # Save the data in a file
         write.table (tidyDataSet, file = "./data/tidyDataSet.txt", row.names = FALSE)
-
-
